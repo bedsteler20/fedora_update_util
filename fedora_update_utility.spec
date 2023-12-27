@@ -1,7 +1,7 @@
 %global srcname copr-tito-quickdoc
 
 Name: fedora_update_utility
-Version: 1.0.2
+Version: 1.0.0
 Release: 1%{?dist}
 License: GPLv3
 Summary: A gui for updating fedora
@@ -67,3 +67,6 @@ A gui for updating fedora
 
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
+* Tue Dec 26 2023 Cameron Dehning <bedsteler2.0@gmail.com> 1.0.0-1
+- new package built with tito
+
