@@ -63,7 +63,6 @@ A gui for updating fedora
 %{_bindir}/fedora_update_utility
 %{_datadir}/applications/dev.bedsteler20.FedoraUpdateUtility.desktop
 %{_datadir}/metainfo/dev.bedsteler20.FedoraUpdateUtility.metainfo.xml
-%{%_userunitdir}/
 
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
