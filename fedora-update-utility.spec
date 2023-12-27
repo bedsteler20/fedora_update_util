@@ -14,7 +14,6 @@ Source0: %{name}-%{version}.tar.gz
 
 BuildArch: x86_64
 
-BuildRequires: systemd-rpm-macros
 BuildRequires: blueprint-compiler
 BuildRequires: cargo
 BuildRequires: rustc
@@ -42,18 +41,6 @@ A gui for updating fedora
 
 %install
 %meson_install
-
-%post
-%systemd_user_post fedora_update_utility.service
-%systemd_user_post fedora_update_utility.timer
-
-%preun
-%systemd_user_preun fedora_update_utility.service
-%systemd_user_preun fedora_update_utility.timer 
-
-%postun
-%systemd_user_postun_with_restart fedora_update_utility.service
-%systemd_user_postun_with_restart fedora_update_utility.timer
 
 
 #-- FILES ---------------------------------------------------------------------#
