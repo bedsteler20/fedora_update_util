@@ -1,7 +1,7 @@
 %global srcname copr-tito-quickdoc
 
 Name: fedora-update-utility
-Version: 1.0.3
+Version: 1.0.4
 Release: 1%{?dist}
 License: GPLv3
 Summary: A gui for updating fedora
@@ -53,6 +53,10 @@ A gui for updating fedora
 
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
+* Tue Dec 26 2023 Cameron Dehning <bedsteler2.0@gmail.com> 1.0.4-1
+- Remove unused systemd-rpm-macros dependency (bedsteler2.0@gmail.com)
+- Remove unnecessary file and fix typo in spec file (bedsteler2.0@gmail.com)
+
 * Tue Dec 26 2023 Cameron Dehning <bedsteler2.0@gmail.com> 1.0.3-1
 - fix unesesary file in spec file (bedsteler2.0@gmail.com)
 
