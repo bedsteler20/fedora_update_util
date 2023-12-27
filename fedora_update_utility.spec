@@ -1,6 +1,6 @@
 %global srcname copr-tito-quickdoc
 
-Name: fedora_update_utility
+Name: fedora-update-utility
 Version: 1.0.0
 Release: 1%{?dist}
 License: GPLv3
