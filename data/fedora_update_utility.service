@@ -2,7 +2,8 @@
 Description=Fedora Update Utility
 
 [Service]
-ExecStart=/usr/bin/fedora_update_utilty
+Type=oneshot
+ExecStart=@exec@ --daemon
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical.target

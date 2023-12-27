@@ -58,6 +58,7 @@ impl DnfPackageManager {
             "dnf --refresh upgrade -y".to_string(),
         ];
 
+        let update_command = vec!["ping".to_string(), "google.com".to_string()];
 
         let os_name = "Fedora".to_string();
 
@@ -110,15 +111,12 @@ impl DnfPackageManager {
 }
 
 impl PackageManager for DnfPackageManager {
-    fn dist_update_desertion(&self) -> String {
-        format!(
-            "Your system is ready to update to Fedora {}.",
-            self.get_dist_upgrade_version()
-        )
+    fn dist_update_description(&self) -> String {
+        "Your system is ready to upgrade to the latest version of Fedora.".to_string()
     }
 
     fn dist_update_msg(&self) -> String {
-        "Your system is ready to update to the latest version of Fedora.".to_string()
+        format!("Update to Fedora {}", self.get_dist_upgrade_version())
     }
 
     fn has_dist_upgrade(&self) -> bool {

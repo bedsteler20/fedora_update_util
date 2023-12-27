@@ -1,0 +1,21 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ErrorPage: Adw.Bin {
+    child: Adw.StatusPage status_page {
+        title: "Error";
+        description: "Something went wrong.";
+        icon-name: "dialog-error-symbolic";
+
+        Button button {
+            label: "Close";
+            halign: center;
+            action-name: "window.close";
+
+            styles [
+                "pill",
+                "destructive-action"
+            ]
+        }
+    };
+}

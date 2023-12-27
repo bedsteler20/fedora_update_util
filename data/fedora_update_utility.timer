@@ -2,8 +2,8 @@
 Description=Checks for updates dail
 
 [Timer]
-Unit=fedora_update_utilty.service
-OnCalendar=daily
+Unit=fedora_update_utility.service
+OnCalendar=*-*-* *:00:00
 Persistent=true
 
 [Install]

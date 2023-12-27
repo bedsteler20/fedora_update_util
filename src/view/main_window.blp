@@ -1,0 +1,29 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $MainWindow: Adw.ApplicationWindow {
+    modal: true;
+    height-request: 600;
+    width-request: 400;
+    resizable: false;
+    title: "Fedora Update Utility";
+
+    content: Box {
+        orientation: vertical;
+
+        Adw.HeaderBar {
+            styles [
+                "flat"
+            ]
+        }
+
+        Adw.ViewStack view_stack {
+            
+        }
+    };
+}
+
+menu primary_menu {
+    item (_("Preferences"), "app.preferences")
+    item (_("About Apphub"), "app.about")
+}

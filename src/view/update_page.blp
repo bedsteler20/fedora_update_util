@@ -1,0 +1,22 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $UpdatePage: Adw.Bin {
+    child: Adw.StatusPage status_page {
+        title: "Updates available";
+        description: "Click to update your system";
+
+        Button {
+            label: "Update";
+            halign: center;
+            valign: center;
+            width-request: 200;
+            clicked => $on_btn_clicked();
+
+            styles [
+                "suggested-action",
+                "pill"
+            ]
+        }
+    };
+}

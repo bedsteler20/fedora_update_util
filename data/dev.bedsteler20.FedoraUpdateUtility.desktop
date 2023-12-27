@@ -1,12 +1,9 @@
 [Desktop Entry]
-Name=Flatstall
-Exec=fedora_update_utility %u
-Comment=Sideloader for Flatpak
+Name=Fedora Update Utility
+Exec=@exec@
+Comment=A utility to update your Fedora system
 Categories=System;
-Terminal=false
+Terminal=true
 Type=Application
 Icon=org.fedoraproject.AnacondaInstaller
-StartupNotify=true
-NoDisplay=true
-DBusActivatable=true
-X-GNOME-UsesNotifications=true
+

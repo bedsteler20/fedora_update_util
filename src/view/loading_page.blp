@@ -1,0 +1,30 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $LoadingPage: Adw.Bin {
+    child: Box {
+        orientation: vertical;
+        hexpand: true;
+        vexpand: true;
+        valign: center;
+        halign: center;
+
+        Gtk.Spinner spinner {
+            halign: fill;
+            spinning: true;
+            width-request: 128;
+            height-request: 128;
+            margin-bottom: 30;
+        }
+
+        Label {
+            label: "Checking for updates...";
+
+            styles [
+                "title-3"
+            ]
+
+            halign: center;
+        }
+    };
+}

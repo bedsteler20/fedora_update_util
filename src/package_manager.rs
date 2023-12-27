@@ -12,7 +12,7 @@ pub trait PackageManager: Send + Sync {
     fn get_update_command(&self) -> Vec<&str>;
 
     fn dist_update_msg(&self) -> String;
-    fn dist_update_desertion(&self) -> String;
+    fn dist_update_description(&self) -> String;
 }
 
 pub fn package_manager() -> &'static dyn PackageManager {
