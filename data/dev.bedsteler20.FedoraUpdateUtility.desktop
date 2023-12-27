@@ -5,6 +5,6 @@ Comment=Sideloader for Flatpak
 Categories=System;
 Terminal=false
 Type=Application
-Icon=system-software-install
+Icon=org.fedoraproject.AnacondaInstaller
 StartupNotify=true
 NoDisplay=true

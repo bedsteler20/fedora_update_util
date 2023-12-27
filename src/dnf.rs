@@ -55,7 +55,7 @@ impl DnfPackageManager {
             "pkexec".to_string(),
             "bash".to_string(),
             "-c".to_string(),
-            "dnf --refresh upgrade".to_string(),
+            "dnf --refresh upgrade -y".to_string(),
         ];
 
 
@@ -93,7 +93,7 @@ impl DnfPackageManager {
             "bash".to_string(),
             "-c".to_string(),
             format!(
-                "dnf --refresh upgrade && dnf system-upgrade download --releasever={}",
+                "dnf --refresh upgrade -y && dnf system-upgrade download -y --releasever={}",
                 latest_version.version.as_ref().unwrap()
             ),
         ];
