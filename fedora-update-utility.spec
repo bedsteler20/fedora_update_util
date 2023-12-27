@@ -1,7 +1,7 @@
 %global srcname copr-tito-quickdoc
 
 Name: fedora-update-utility
-Version: 1.0.6
+Version: 1.1.0
 Release: 1%{?dist}
 License: GPLv3
 Summary: A gui for updating fedora
@@ -54,6 +54,9 @@ A gui for updating fedora
 %{_userunitdir}/fedora_update_utility.timer
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
+* Tue Dec 26 2023 Cameron Dehning <bedsteler2.0@gmail.com> 1.1.0-1
+- Update dependencies and add flags for dnf commands (bedsteler2.0@gmail.com)
+
 * Tue Dec 26 2023 Cameron Dehning <bedsteler2.0@gmail.com> 1.0.6-1
 - 
 
