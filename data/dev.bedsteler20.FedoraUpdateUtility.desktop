@@ -8,3 +8,5 @@ Type=Application
 Icon=org.fedoraproject.AnacondaInstaller
 StartupNotify=true
 NoDisplay=true
+DBusActivatable=true
+X-GNOME-UsesNotifications=true
