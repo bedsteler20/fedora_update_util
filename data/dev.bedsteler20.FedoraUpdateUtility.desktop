@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Flatstall
+Exec=fedora_update_utility %u
+Comment=Sideloader for Flatpak
+Categories=System;
+Terminal=false
+Type=Application
+Icon=system-software-install
+StartupNotify=true
+NoDisplay=true

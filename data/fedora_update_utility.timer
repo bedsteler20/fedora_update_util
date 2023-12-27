@@ -1,0 +1,10 @@
+[Unit]
+Description=Checks for updates dail
+
+[Timer]
+Unit=fedora_update_utilty.service
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

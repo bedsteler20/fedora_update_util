@@ -1,0 +1,8 @@
+[Unit]
+Description=Fedora Update Utility
+
+[Service]
+ExecStart=/usr/bin/fedora_update_utilty
+
+[Install]
+WantedBy=default.target

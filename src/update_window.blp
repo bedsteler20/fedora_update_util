@@ -1,0 +1,56 @@
+using Gtk 4.0;
+using Adw 1;
+using Vte 2.91;
+
+template $UpdateWindow: Adw.PreferencesWindow {
+    default-height: 600;
+    default-width: 400;
+    resizable: false;
+    search-enabled: false;
+    deletable: false;
+
+    Adw.PreferencesPage {
+        Adw.PreferencesGroup {
+            Box {
+                orientation: vertical;
+
+                Adw.StatusPage status_page {
+                    title: "Installing updates";
+                    description: "Your system is being updated. This may take a while.";
+                }
+
+                ProgressBar bar {
+                    pulse-step: 0.1;
+                    width-request: 300;
+                    halign: center;
+                    valign: center;
+                    margin-bottom: 30;
+                }
+
+                Button {
+                    label: "Show Output";
+                    halign: center;
+                    width-request: 200;
+                    margin-bottom: 30;
+                    clicked => $on_show_output_btn() swapped;
+                }
+            }
+        }
+    }
+}
+
+Adw.Window output_win {
+    title: "Output";
+    hide-on-close: true;
+
+    content: Box {
+        orientation: vertical;
+
+        Adw.HeaderBar {}
+
+        Vte.Terminal term {
+            // input-enabled: false;
+            child-exited => $on_term_child_exited() swapped;
+        }
+    };
+}
