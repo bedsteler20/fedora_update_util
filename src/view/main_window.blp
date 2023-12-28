@@ -7,6 +7,7 @@ template $MainWindow: Adw.ApplicationWindow {
     width-request: 400;
     resizable: false;
     title: "Fedora Update Utility";
+    icon-name: "dev.bedsteler20.FedoraUpdateUtility";
 
     content: Box {
         orientation: vertical;
@@ -17,9 +18,7 @@ template $MainWindow: Adw.ApplicationWindow {
             ]
         }
 
-        Adw.ViewStack view_stack {
-            
-        }
+        Adw.ViewStack view_stack {}
     };
 }
 

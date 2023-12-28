@@ -1,5 +1,6 @@
-use crate::dnf::DnfPackageManager;
 use std::collections::HashMap;
+
+use crate::package_manager::DnfPackageManager;
 
 pub const FEDORA_COLLECTION_URL: &str = "https://admin.fedoraproject.org/pkgdb/api/collections/";
 pub const APP_ID: &str = "dev.bedsteler20.FedoraUpdateUtil";
@@ -46,6 +47,7 @@ pub fn parse_os_release() -> HashMap<String, String> {
 
 pub type Result<T> = std::result::Result<T, Error>;
 
+#[derive(Debug)]
 pub enum Error {
     Surf(surf::Error),
     IntParse(std::num::ParseIntError),
@@ -86,5 +88,3 @@ impl std::fmt::Display for Error {
         }
     }
 }
-
-

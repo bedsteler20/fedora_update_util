@@ -6,4 +6,6 @@ Categories=System;
 Terminal=true
 Type=Application
 Icon=org.fedoraproject.AnacondaInstaller
-
+StartupNotify=true
+DBusActivatable=true
+X-GNOME-UsesNotifications=true

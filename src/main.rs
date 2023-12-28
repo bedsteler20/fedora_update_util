@@ -1,4 +1,3 @@
-mod dnf;
 mod utils;
 mod app;
 mod view;

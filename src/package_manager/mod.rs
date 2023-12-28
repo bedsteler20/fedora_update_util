@@ -1,3 +1,7 @@
+mod dnf;
+
+pub use dnf::DnfPackageManager;
+
 static mut PACKAGE_MANAGER: Option<Box<dyn PackageManager>> = None;
 
 pub trait PackageManager: Send + Sync {
