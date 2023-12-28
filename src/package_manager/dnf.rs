@@ -58,8 +58,6 @@ impl DnfPackageManager {
             "dnf --refresh upgrade -y".to_string(),
         ];
 
-        let update_command = vec!["ping".to_string(), "google.com".to_string()];
-
         let os_name = "Fedora".to_string();
 
         let latest_version = surf::get(FEDORA_COLLECTION_URL)
